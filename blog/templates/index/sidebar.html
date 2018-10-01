@@ -1,0 +1,110 @@
+
+<!--右测导航-->
+<div class="fenlei">
+  <ul class="flnav">
+    <li class="flselect"><a href="#" title="最新文章" class="pall"></a></li>
+    <li><a href="#" title="最受欢迎" class="pgood"></a></li>
+    <li><a href="#" title="最新评论" class="pbro"></a></li>
+  </ul>
+</div>
+<div class="newstw">
+  <ul class="sidenews">
+    <h2>最新文章</h2>
+    {% for type in boweninfo1 %}
+      {% if type.bPic %}
+        <li><i><img src="/static/{{ type.bPic }}" alt=""></i>
+          <p><a href="/{{ type.id }}">{{type.bTitle}}</a></p>
+          <span class="date">{{ type.bDate|date:"Y-m-d" }}</span>
+        </li>
+      {% else %}
+        <li>
+          <i><img src="/static/images/wutu.png" alt=""></i>
+          <p><a href="/{{ type.id }}">{{type.bTitle}}</a></p>
+          <span class="date">{{ type.bDate|date:"Y-m-d" }}</span>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+  <ul class="sidenews">
+    <h2>最受欢迎</h2>
+    {% for type in boweninfo2 %}
+      {% if type.bPic %}
+        <li><i><img src="/static/{{ type.bPic }}" alt=""></i>
+          <p><a href="/{{ type.id }}">{{type.bTitle}}</a></p>
+          <span class="date">{{ type.bDate|date:"Y-m-d" }}</span>
+        </li>
+      {% else %}
+        <li>
+          <i><img src="/static/images/wutu.png" alt=""></i>
+          <p><a href="/{{ type.id }}">{{type.bTitle}}</a></p>
+          <span class="date">{{ type.bDate|date:"Y-m-d" }}</span>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+  <ul class="sidenews">
+    <h2>最新评论</h2>
+    {% for type in boweninfo3 %}
+      {% if type.bPic %}
+        <li><i><img src="/static/{{ type.bPic }}" alt=""></i>
+          <p><a href="/{{ type.id }}">{{type.bTitle}}</a></p>
+          <span class="date">{{ type.bDate|date:"Y-m-d" }}</span>
+        </li>
+      {% else %}
+        <li>
+          <i><img src="/static/images/wutu.png" alt=""></i>
+          <p><a href="/{{ type.id }}">{{type.bTitle}}</a></p>
+          <span class="date">{{ type.bDate|date:"Y-m-d" }}</span>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="ad"><img src="/static/images/7.jpg"></div>
+<div class="about">
+  <h2 class="hometitle">关于本站</h2>
+  <ul>
+    <div class="avatar"> <img alt="春风化雨" src="/static/images/tx.jpg"> </div>
+    <p class="abname">春风化雨</p>
+    <p class="abtext"> python爱好者，一直潜心研究web后端，前端技术，个人博客分享一些学习的资料和心得。 </p>
+  </ul>
+</div>
+<div class="tjlm">
+  <h2 class="hometitle">分类标签</h2>
+  <ul>
+      {% for nav in navs %}
+        <li><a href="/list/{{ nav.id }}_1">{{ nav.tTitle }}</a></li>
+      {% endfor %}
+  </ul>
+</div>
+<div class="tpjx">
+  <h2 class="hometitle">图片精选</h2>
+  <ul>
+    {% for bowen in boweninfo %}
+
+    {% if bowen.bPic %}
+      {% if forloop.counter <= 6 %}
+        <li>
+          <a href="/{{bowen.id}}">
+            <i><img src="/static/{{bowen.bPic}}"></i>
+            <span>{{bowen.bTitle}}</span>
+          </a>
+        </li>
+      {% endif %}
+    {% endif %}
+    {% endfor %}
+  </ul>
+</div>
+<div class="links">
+  <h2 class="hometitle">友情链接</h2>
+  <ul>
+    <li><a href="http://www.dbshost.cn/">DBS主机</a></li>
+    <li><a href="http://www.siyuweb.com/">思雨前端</a></li>
+    <li><a href="https://www.xiaochao.me/">陈文超前端博客</a></li>
+    <li><a href="http://www.bandwagonvps.com/">搬瓦工vps</a></li>
+    <li><a href="http://www.numberer.net">第二导航</a></li>
+    <li><a href="http://www.lisa33xiaoq.net">web前端技术</a></li>
+  </ul>
+</div>
+<div class="ad"> <img src="/static/images/8.jpg"> </div>

@@ -1,0 +1,83 @@
+{% extends 'index/base.html' %}
+{% block main %}
+<div class="wrapper">
+  <main> 
+    <!--banner begin-->
+    <div class="banner">
+      <div id="banner" class="fader">
+        {% for bowen in bowen_top %}
+        <li class="slide" >
+          <a href="/{{bowen.id}}" title="{{bowen.bTitle}}" target="_blank">
+            <img src="/static/{{bowen.bPic}}"><span class="imginfo">{{bowen.bTitle|safe}}</span>
+          </a>
+        </li>
+        {% endfor %}
+        <div class="fader_controls">
+          <div class="page prev" data-target="prev">&lsaquo;</div>
+          <div class="page next" data-target="next">&rsaquo;</div>
+          <ul class="pager_list">
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--banner end-->
+
+    <div class="bloglist">
+      <div style="display:none" id="hide">{{ bowentype }}</div>
+      <ul>
+        {% for type in boweninfo %}
+          <li>
+            <i class="blogpic">
+              <a href="/{{ type.id }}">
+                {% if bowen.bPic %}
+                  <img src="/static/{{ type.bPic }}" alt="">
+                {% else %}
+                    <img src="/static/images/wutu.png" alt="">
+                {% endif%}
+              </a>
+            </i>
+            <dl>
+              <dt><a href="/{{ type.id }}" target="_blank">{{type.bTitle}}</a></dt>
+              <dd><span class="bloginfo">{{ type.bContent|safe }}</span>
+                <p class="timeinfo">
+                  <span class="lanmu"><a href="/{{ type.id }}" target="_blank" class="bowentype"></a></span>
+                  <span class="date">{{ type.bDate|date:"Y-m-d" }}</span>
+                  {% if type.bClick > 0 %}
+                      <span class="click">{{ type.bClick }}</span>
+                    {% endif %}
+                    {% if type.bComment > 0 %}
+                      <span class="comment">{{ type.bComment }}</span>
+                    {% endif %}
+                </p>
+                <a class="read" href="/{{ type.id }}">阅读更多</a> </dd>
+            </dl>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <!--bloglist end--> 
+  </main>
+  <aside class="sidebar">
+
+      <!--右测导航-->
+
+      {% include "index/sidebar.html" %}
+
+      <!--end右测导航-->
+
+
+  </aside>
+  <!--sidebar end--> 
+</div>
+<script>
+  var bowentype = $('#hide').html();
+  var type_element = $('.bowentype');
+  bowentype = eval("(" + bowentype + ")");
+
+  for(var i=0; i<bowentype.length; i++){
+      $(type_element[i]).html(bowentype[i])
+  }
+</script>
+{% endblock main %}
+
+

@@ -1,0 +1,315 @@
+*** Starting uWSGI 2.0.17.1 (64bit) on [Fri Sep 28 21:39:51 2018] ***
+compiled with version: 5.4.0 20160609 on 18 September 2018 18:46:16
+os: Linux-4.4.0-116-generic #140-Ubuntu SMP Mon Feb 12 21:23:04 UTC 2018
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/python/Desktop/projects/blog
+writing pidfile to uwsgi.pid
+detected binary path: /home/python/.virtualenvs/py31/bin/uwsgi
+chdir() to /home/blog_project/
+chdir(): No such file or directory [core/uwsgi.c line 2631]
+*** Starting uWSGI 2.0.17.1 (64bit) on [Fri Sep 28 21:43:55 2018] ***
+compiled with version: 5.4.0 20160609 on 18 September 2018 18:46:16
+os: Linux-4.4.0-116-generic #140-Ubuntu SMP Mon Feb 12 21:23:04 UTC 2018
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/python/Desktop/projects/blog
+writing pidfile to uwsgi.pid
+detected binary path: /home/python/.virtualenvs/py31/bin/uwsgi
+chdir() to /home/python/Desktop/projects/blog/
+your processes number limit is 15576
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 192.168.0.103:8000 fd 3
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0xde6270
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0xde6270 pid: 16495 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 16495)
+spawned uWSGI worker 1 (pid: 16497, cores: 2)
+spawned uWSGI worker 2 (pid: 16498, cores: 2)
+spawned uWSGI worker 3 (pid: 16500, cores: 2)
+spawned uWSGI worker 4 (pid: 16501, cores: 2)
+SIGINT/SIGQUIT received...killing workers...
+*** Starting uWSGI 2.0.17.1 (64bit) on [Fri Sep 28 21:44:02 2018] ***
+compiled with version: 5.4.0 20160609 on 18 September 2018 18:46:16
+os: Linux-4.4.0-116-generic #140-Ubuntu SMP Mon Feb 12 21:23:04 UTC 2018
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/python/Desktop/projects/blog
+writing pidfile to uwsgi.pid
+detected binary path: /home/python/.virtualenvs/py31/bin/uwsgi
+chdir() to /home/python/Desktop/projects/blog/
+your processes number limit is 15576
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (192.168.0.103:8000).
+bind(): Address already in use [core/socket.c line 769]
+Fri Sep 28 21:44:58 2018 - worker 1 (pid: 16497) is taking too much time to die...NO MERCY !!!
+Fri Sep 28 21:44:58 2018 - worker 2 (pid: 16498) is taking too much time to die...NO MERCY !!!
+Fri Sep 28 21:44:58 2018 - worker 3 (pid: 16500) is taking too much time to die...NO MERCY !!!
+Fri Sep 28 21:44:58 2018 - worker 4 (pid: 16501) is taking too much time to die...NO MERCY !!!
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.17.1 (64bit) on [Fri Sep 28 22:44:13 2018] ***
+compiled with version: 5.4.0 20160609 on 18 September 2018 18:46:16
+os: Linux-4.4.0-116-generic #140-Ubuntu SMP Mon Feb 12 21:23:04 UTC 2018
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/python/Desktop/projects/blog
+writing pidfile to uwsgi.pid
+detected binary path: /home/python/.virtualenvs/py31/bin/uwsgi
+chdir() to /home/python/Desktop/projects/blog/
+your processes number limit is 15576
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 192.168.0.103:8001 fd 3
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x94f2b0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x94f2b0 pid: 17200 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 17200)
+spawned uWSGI worker 1 (pid: 17202, cores: 2)
+spawned uWSGI worker 2 (pid: 17203, cores: 2)
+spawned uWSGI worker 3 (pid: 17205, cores: 2)
+spawned uWSGI worker 4 (pid: 17207, cores: 2)
+[pid: 17203|app: 0|req: 1/1] 192.168.0.103 () {42 vars in 745 bytes} [Fri Sep 28 22:44:34 2018] GET / => generated 65890 bytes in 3057 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 17203|app: 0|req: 2/2] 192.168.0.101 () {36 vars in 546 bytes} [Fri Sep 28 22:44:52 2018] GET / => generated 65890 bytes in 20561 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 17202|app: 0|req: 2/3] 192.168.0.101 () {36 vars in 546 bytes} [Fri Sep 28 22:56:26 2018] GET / => generated 65816 bytes in 10998 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 17202|app: 0|req: 2/4] 192.168.0.101 () {36 vars in 546 bytes} [Fri Sep 28 22:56:28 2018] GET / => generated 65816 bytes in 9391 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 17203|app: 0|req: 3/5] 192.168.0.101 () {36 vars in 546 bytes} [Fri Sep 28 22:56:30 2018] GET / => generated 65890 bytes in 7447 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 17207|app: 0|req: 1/6] 192.168.0.101 () {36 vars in 546 bytes} [Fri Sep 28 22:56:36 2018] GET / => generated 65816 bytes in 4417 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 17207|app: 0|req: 3/7] 192.168.0.101 () {36 vars in 546 bytes} [Fri Sep 28 23:00:49 2018] GET / => generated 65816 bytes in 3800 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 17207|app: 0|req: 4/8] 192.168.0.101 () {36 vars in 546 bytes} [Fri Sep 28 23:00:51 2018] GET / => generated 65816 bytes in 4597 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 17203|app: 0|req: 5/9] 192.168.0.101 () {36 vars in 546 bytes} [Fri Sep 28 23:00:52 2018] GET / => generated 65890 bytes in 4513 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 17207|app: 0|req: 4/10] 192.168.0.101 () {36 vars in 546 bytes} [Fri Sep 28 23:00:53 2018] GET / => generated 65816 bytes in 4787 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 17203|app: 0|req: 5/11] 192.168.0.101 () {36 vars in 546 bytes} [Fri Sep 28 23:00:54 2018] GET / => generated 65890 bytes in 5459 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 17205|app: 0|req: 1/12] 192.168.0.101 () {36 vars in 546 bytes} [Fri Sep 28 23:00:55 2018] GET / => generated 65816 bytes in 7611 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 17202|app: 0|req: 4/13] 192.168.0.101 () {36 vars in 546 bytes} [Fri Sep 28 23:07:27 2018] GET / => generated 65816 bytes in 7835 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 17202|app: 0|req: 4/14] 192.168.0.101 () {36 vars in 546 bytes} [Fri Sep 28 23:07:29 2018] GET / => generated 65816 bytes in 7564 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 17203|app: 0|req: 6/15] 192.168.0.101 () {36 vars in 546 bytes} [Fri Sep 28 23:07:32 2018] GET / => generated 65890 bytes in 8419 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 17207|app: 0|req: 6/16] 192.168.0.101 () {36 vars in 546 bytes} [Fri Sep 28 23:18:08 2018] GET / => generated 65816 bytes in 20720 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 17203|app: 0|req: 8/17] 192.168.0.101 () {36 vars in 546 bytes} [Fri Sep 28 23:18:06 2018] GET / => generated 65890 bytes in 36145 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 17205|app: 0|req: 3/18] 192.168.0.101 () {36 vars in 546 bytes} [Fri Sep 28 23:18:11 2018] GET / => generated 65816 bytes in 31715 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 17202|app: 0|req: 6/19] 192.168.0.101 () {36 vars in 546 bytes} [Fri Sep 28 23:18:11 2018] GET / => generated 65816 bytes in 35631 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 17205|app: 0|req: 3/20] 192.168.0.101 () {36 vars in 546 bytes} [Fri Sep 28 23:18:09 2018] GET / => generated 65816 bytes in 37085 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 17207|app: 0|req: 7/21] 192.168.0.101 () {36 vars in 546 bytes} [Fri Sep 28 23:18:10 2018] GET / => generated 65816 bytes in 37133 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 17207|app: 0|req: 7/22] 192.168.0.101 () {36 vars in 546 bytes} [Fri Sep 28 23:18:29 2018] GET / => generated 65816 bytes in 27462 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 17202|app: 0|req: 6/23] 192.168.0.101 () {36 vars in 546 bytes} [Fri Sep 28 23:18:12 2018] GET / => generated 65816 bytes in 45769 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 17203|app: 0|req: 9/24] 192.168.0.101 () {36 vars in 546 bytes} [Fri Sep 28 23:18:12 2018] GET / => generated 65890 bytes in 52481 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 17203|app: 0|req: 9/25] 192.168.0.101 () {36 vars in 546 bytes} [Fri Sep 28 23:18:42 2018] GET / => generated 65890 bytes in 42470 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 17203|app: 0|req: 10/26] 192.168.0.101 () {36 vars in 546 bytes} [Fri Sep 28 23:20:38 2018] GET / => generated 65890 bytes in 20381 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 17205|app: 0|req: 4/27] 192.168.0.101 () {36 vars in 546 bytes} [Fri Sep 28 23:20:42 2018] GET / => generated 65816 bytes in 21798 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 4 seconds
+worker 2 buried after 4 seconds
+worker 3 buried after 4 seconds
+worker 4 buried after 4 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Sep 29 08:46:31 2018] ***
+compiled with version: 5.4.0 20160609 on 18 September 2018 18:46:16
+os: Linux-4.4.0-116-generic #140-Ubuntu SMP Mon Feb 12 21:23:04 UTC 2018
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/python/Desktop/projects/blog
+writing pidfile to uwsgi.pid
+detected binary path: /home/python/.virtualenvs/py31/bin/uwsgi
+chdir() to /home/blog_project/
+chdir(): No such file or directory [core/uwsgi.c line 2631]
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Sep 29 08:48:55 2018] ***
+compiled with version: 5.4.0 20160609 on 18 September 2018 18:46:16
+os: Linux-4.4.0-116-generic #140-Ubuntu SMP Mon Feb 12 21:23:04 UTC 2018
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/python/Desktop/projects/blog
+writing pidfile to uwsgi.pid
+detected binary path: /home/python/.virtualenvs/py31/bin/uwsgi
+chdir() to /home/blog_project/
+chdir(): No such file or directory [core/uwsgi.c line 2631]
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Sep 29 08:49:02 2018] ***
+compiled with version: 5.4.0 20160609 on 18 September 2018 18:46:16
+os: Linux-4.4.0-116-generic #140-Ubuntu SMP Mon Feb 12 21:23:04 UTC 2018
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/python/Desktop/projects/blog
+writing pidfile to uwsgi.pid
+detected binary path: /home/python/.virtualenvs/py31/bin/uwsgi
+chdir() to /home/blog_project/
+chdir(): No such file or directory [core/uwsgi.c line 2631]
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Sep 29 08:49:12 2018] ***
+compiled with version: 5.4.0 20160609 on 18 September 2018 18:46:16
+os: Linux-4.4.0-116-generic #140-Ubuntu SMP Mon Feb 12 21:23:04 UTC 2018
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/python/Desktop/projects/blog
+writing pidfile to uwsgi.pid
+detected binary path: /home/python/.virtualenvs/py31/bin/uwsgi
+chdir() to /home/blog_project/
+chdir(): No such file or directory [core/uwsgi.c line 2631]
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Sep 29 08:51:00 2018] ***
+compiled with version: 5.4.0 20160609 on 18 September 2018 18:46:16
+os: Linux-4.4.0-116-generic #140-Ubuntu SMP Mon Feb 12 21:23:04 UTC 2018
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/python/Desktop/projects/blog
+writing pidfile to uwsgi.pid
+detected binary path: /home/python/.virtualenvs/py31/bin/uwsgi
+chdir() to /home/blog_project/
+chdir(): No such file or directory [core/uwsgi.c line 2631]
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Sep 29 08:51:05 2018] ***
+compiled with version: 5.4.0 20160609 on 18 September 2018 18:46:16
+os: Linux-4.4.0-116-generic #140-Ubuntu SMP Mon Feb 12 21:23:04 UTC 2018
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/python/Desktop/projects/blog
+writing pidfile to uwsgi.pid
+detected binary path: /home/python/.virtualenvs/py31/bin/uwsgi
+chdir() to /home/blog_project/
+chdir(): No such file or directory [core/uwsgi.c line 2631]
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Sep 29 08:51:38 2018] ***
+compiled with version: 5.4.0 20160609 on 18 September 2018 18:46:16
+os: Linux-4.4.0-116-generic #140-Ubuntu SMP Mon Feb 12 21:23:04 UTC 2018
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/python/Desktop/projects/blog
+writing pidfile to uwsgi.pid
+detected binary path: /home/python/.virtualenvs/py31/bin/uwsgi
+chdir() to /home/blog_project/
+chdir(): No such file or directory [core/uwsgi.c line 2631]
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Sep 29 08:52:08 2018] ***
+compiled with version: 5.4.0 20160609 on 18 September 2018 18:46:16
+os: Linux-4.4.0-116-generic #140-Ubuntu SMP Mon Feb 12 21:23:04 UTC 2018
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/python/Desktop/projects/blog
+writing pidfile to uwsgi.pid
+detected binary path: /home/python/.virtualenvs/py31/bin/uwsgi
+chdir() to /home/blog_project/
+chdir(): No such file or directory [core/uwsgi.c line 2631]
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Sep 29 08:53:15 2018] ***
+compiled with version: 5.4.0 20160609 on 18 September 2018 18:46:16
+os: Linux-4.4.0-116-generic #140-Ubuntu SMP Mon Feb 12 21:23:04 UTC 2018
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/python/Desktop/projects/blog
+writing pidfile to uwsgi.pid
+detected binary path: /home/python/.virtualenvs/py31/bin/uwsgi
+chdir() to /home/blog_project/
+chdir(): No such file or directory [core/uwsgi.c line 2631]
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Sep 29 08:55:49 2018] ***
+compiled with version: 5.4.0 20160609 on 18 September 2018 18:46:16
+os: Linux-4.4.0-116-generic #140-Ubuntu SMP Mon Feb 12 21:23:04 UTC 2018
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/python/Desktop/projects/blog
+writing pidfile to uwsgi.pid
+detected binary path: /home/python/.virtualenvs/py31/bin/uwsgi
+chdir() to /home/python/Desktop/projects/blog/
+your processes number limit is 15576
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 192.168.0.103:8001 fd 3
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x20ed2b0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x20ed2b0 pid: 20318 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 20318)
+spawned uWSGI worker 1 (pid: 20320, cores: 2)
+spawned uWSGI worker 2 (pid: 20321, cores: 2)
+spawned uWSGI worker 3 (pid: 20323, cores: 2)
+spawned uWSGI worker 4 (pid: 20324, cores: 2)
+[pid: 20323|app: 0|req: 1/1] 192.168.0.101 () {36 vars in 546 bytes} [Sat Sep 29 08:56:04 2018] GET / => generated 65816 bytes in 2998 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 20321|app: 0|req: 2/2] 192.168.0.101 () {36 vars in 546 bytes} [Sat Sep 29 09:00:46 2018] GET / => generated 65816 bytes in 8131 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 20323|app: 0|req: 3/3] 192.168.0.101 () {36 vars in 546 bytes} [Sat Sep 29 09:00:49 2018] GET / => generated 65816 bytes in 6238 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 20321|app: 0|req: 3/4] 192.168.0.101 () {36 vars in 546 bytes} [Sat Sep 29 09:00:44 2018] GET / => generated 65816 bytes in 11045 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 20323|app: 0|req: 4/5] 192.168.0.101 () {36 vars in 546 bytes} [Sat Sep 29 09:00:48 2018] GET / => generated 65816 bytes in 10333 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 20320|app: 0|req: 2/6] 192.168.0.101 () {36 vars in 546 bytes} [Sat Sep 29 09:00:49 2018] GET / => generated 65816 bytes in 10863 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 20324|app: 0|req: 2/7] 192.168.0.101 () {36 vars in 546 bytes} [Sat Sep 29 09:00:48 2018] GET / => generated 65816 bytes in 14815 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 20324|app: 0|req: 2/8] 192.168.0.101 () {36 vars in 546 bytes} [Sat Sep 29 09:00:49 2018] GET / => generated 65816 bytes in 15268 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 20320|app: 0|req: 2/9] 192.168.0.101 () {36 vars in 546 bytes} [Sat Sep 29 09:00:47 2018] GET / => generated 65816 bytes in 17139 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 20321|app: 0|req: 4/10] 192.168.0.101 () {36 vars in 546 bytes} [Sat Sep 29 09:00:54 2018] GET / => generated 65816 bytes in 10280 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 20323|app: 0|req: 4/11] 192.168.0.101 () {36 vars in 546 bytes} [Sat Sep 29 09:00:55 2018] GET / => generated 65816 bytes in 10118 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 20321|app: 0|req: 4/12] 192.168.0.101 () {36 vars in 546 bytes} [Sat Sep 29 09:00:55 2018] GET / => generated 65816 bytes in 10059 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 20323|app: 0|req: 5/13] 192.168.0.101 () {36 vars in 546 bytes} [Sat Sep 29 09:01:18 2018] GET / => generated 65816 bytes in 2834 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 20324|app: 0|req: 3/14] 192.168.0.101 () {36 vars in 546 bytes} [Sat Sep 29 09:35:57 2018] GET / => generated 65816 bytes in 2821 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 20324|app: 0|req: 4/15] 192.168.0.101 () {36 vars in 546 bytes} [Sat Sep 29 13:30:46 2018] GET / => generated 65816 bytes in 2552 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 20320|app: 0|req: 3/16] 192.168.0.101 () {36 vars in 546 bytes} [Sat Sep 29 13:30:52 2018] GET / => generated 65816 bytes in 3002 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 20323|app: 0|req: 6/17] 192.168.0.101 () {36 vars in 546 bytes} [Sun Sep 30 14:11:58 2018] GET / => generated 65816 bytes in 22092 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+Sun Sep 30 14:16:00 2018 - worker 1 (pid: 20320) is taking too much time to die...NO MERCY !!!
+Sun Sep 30 14:16:01 2018 - worker 2 (pid: 20321) is taking too much time to die...NO MERCY !!!
+Sun Sep 30 14:16:01 2018 - worker 3 (pid: 20323) is taking too much time to die...NO MERCY !!!
+Sun Sep 30 14:16:01 2018 - worker 4 (pid: 20324) is taking too much time to die...NO MERCY !!!
+worker 1 buried after 3 seconds
+worker 2 buried after 3 seconds
+worker 3 buried after 3 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.

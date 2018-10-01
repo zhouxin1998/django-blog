@@ -1,0 +1,51 @@
+{% extends 'index/base.html' %}
+{% block main %}
+
+{% if query %}
+    <div class="wrapper">
+        <main>
+            <h2 class="place">您现在的位置是：网站首页&gt; <a href="#">搜索</a></h2>
+            <div class="fengm">
+                <h3>搜索结果如下：<span style="color:red;float: none">{{search_txt}}</span></h3>
+                <ul class="fmnews">
+                    {% for result in page.object_list %}
+                    <li>
+                        <span>{{result.object.bDate|date:"Y-m-d"}}</span>
+                        <a href="/{{ result.object.id }}/">{{result.object.bContent|safe}}</a>
+                    </li>
+                    {% empty %}
+                        <p>没找到内容</p>
+                    {% endfor %}
+                </ul>
+            </div>
+            <!--bloglist end-->
+
+            <div class="pagelist">
+                <!--分页　　-->
+                {% if page.has_previous or page.has_next %}
+                    {% if page.has_previous %}
+                        <a href="?q={{ query }}&amp;page={{ page.previous_page_number }}" title="上一页">&nbsp;上一页</a>&nbsp;&nbsp;&nbsp;
+                    {% endif %}
+
+                    {% if page.has_next %}
+                        <a href="?q={{ query }}&amp;page={{ page.next_page_number }}" title="下一页">&nbsp;下一页</a>&nbsp;&nbsp;&nbsp;
+                    {% endif %}
+                {% endif %}
+
+            </div>
+        </main>
+
+        <aside class="sidebar">
+
+            <!--右测导航-->
+            {% include "index/info_sidebar.html" %}
+
+            <!--end右测导航-->
+
+        </aside>
+    </div>
+
+
+{% endif %}
+
+{% endblock main %}

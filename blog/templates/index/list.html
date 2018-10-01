@@ -1,0 +1,81 @@
+{% extends 'index/base.html' %}
+{% block main %}
+<div class="wrapper">
+  <main>
+     <h2 class="place">您现在的位置是：网站首页&gt; <a href="/list/{{ url_id }}">{{ current_title }}</a></h2>
+
+    <div class="bloglist">
+      <ul>
+          {% for bowen in page %}
+            <li>
+                <i class="blogpic">
+                    <a href="/{{ bowen.id }}">
+                      {% if bowen.bPic %}
+                        <img src="/static/{{ bowen.bPic }}" alt="">
+                      {% else %}
+                          <img src="/static/images/wutu.png" alt="">
+                      {% endif%}
+                    </a>
+                </i>
+              <dl>
+                <dt><a href="/{{ bowen.id }}" target="_blank">{{ bowen.bTitle }}</a></dt>
+                <dd><span class="bloginfo">{{ bowen.bContent|safe }}</span>
+                  <p class="timeinfo">
+                    <span class="lanmu"><a href="/{{ bowen.id }}" target="_blank">{{ bowen.bTitle }}</a></span>
+                    <span class="date">{{ bowen.bDate|date:"Y-m-d"}}</span>
+                    {% if bowen.bClick > 0 %}
+                      <span class="click">{{ bowen.bClick }}</span>
+                    {% endif %}
+                    {% if bowen.bComment > 0 %}
+                      <span class="comment">{{ bowen.bComment }}</span>
+                    {% endif %}
+                  </p>
+                  <a class="read" href="/{{ bowen.id }}">阅读更多</a> </dd>
+              </dl>
+            </li>
+          {% endfor %}
+      </ul>
+    </div>
+    <!--bloglist end-->
+    <div class="pagelist">
+      <!--分页　　-->
+      <span>共{{pageinator.count}}条</span>
+
+      {% if page.has_previous %}
+        <a href="/list/{{ url_id }}_{{ page.previous_page_number}}/" title="上一页">&nbsp;上一页</a>&nbsp;&nbsp;&nbsp;
+      {% else %}
+        <a title="Total record">&nbsp;<b>上一页</b> </a>&nbsp;&nbsp;&nbsp;
+      {% endif %}
+
+
+      {% for index_page in pageinator.page_range %}
+        {% if index_page == page.number %}
+          <a class="active"> {{ index_page }}</a>&nbsp;
+        {% else %}
+          <a href="/list/{{url_id}}_{{index_page}}/"> {{ index_page }}</a>&nbsp;
+        {% endif %}
+      {% endfor %}
+
+
+      {% if page.has_next %}
+        <a href="/list/{{ url_id }}_{{ page.next_page_number}}/" title="下一页">&nbsp;下一页</a>&nbsp;&nbsp;&nbsp;
+      {% else %}
+        <a title="Total record">&nbsp;<b>下一页</b> </a>&nbsp;&nbsp;&nbsp;
+      {% endif %}
+      <a href="/list/{{ url_id }}_{{ pageinator.num_pages }}/">尾页</a>
+
+
+    </div>
+  </main>
+  <aside class="sidebar">
+
+      <!--右测导航-->
+
+      {% include "index/sidebar.html" %}
+
+      <!--end右测导航-->
+
+  </aside>
+  <!--sidebar end-->
+</div>
+{% endblock main %}

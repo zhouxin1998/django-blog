@@ -1,0 +1,67 @@
+{% extends 'index/base.html' %}
+{% block main %}
+<div class="wrapper">
+  <main>
+    <h2 class="place">您现在的位置是：网站首页&gt; <a href="/">{{ type_title }}</a></h2>
+    <div class="infosbox">
+      <div class="newsview">
+        <h3 class="news_title">{{ blog_info.bTitle }}</h3>
+        <div class="bloginfo">
+          <ul>
+            <li class="author"> 类型:</li>
+            <li class="lmname">{{ type_title }}</li>
+            <li class="timer">{{ blog_info.bDate }}</li>
+          </ul>
+        </div>
+        <div class="news_con" style="word-break:break-all;">
+          {% if blog_info.bPic %}
+            <img src="/static/{{ blog_info.bPic }}" alt="">
+          {% endif %}
+          {{ blog_info.bContent|safe }}
+        </div>
+      </div>
+      <div class="share">
+        <p class="diggit">
+          阅读量：({{ blog_info.bClick }})
+      </div>
+      <div class="nextinfo">
+        <p>上一篇：
+            {% if prev_blog_info.bTitle %}
+              <a href="/{{ prev_blog_info.id }}">{{ prev_blog_info.bTitle }}</a>
+            {% else %}
+              没有了
+            {% endif %}
+        </p>
+        <p>下一篇：
+          {% if next_blog_info.bTitle %}
+              <a href="/{{ next_blog_info.id }}">{{ next_blog_info.bTitle }}</a>
+            {% else %}
+              没有了
+            {% endif %}
+
+        </p>
+      </div>
+      <div class="otherlink">
+        <h2>相关文章</h2>
+        <ul>
+          {% for type in correlation %}
+            <li><a href="/{{ type.id }}" title="{{ type.bTitle}}">{{ type.bTitle }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="news_pl">
+        <h2>文章评论</h2>
+        <div class="gbko"> </div>
+      </div>
+    </div>
+  </main>
+  <aside class="sidebar">
+
+      <!--右测导航-->
+      {% include "index/info_sidebar.html" %}
+      <!--end右测导航-->
+
+  </aside>
+  <!--sidebar end-->
+</div>
+{% endblock main %}
